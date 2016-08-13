@@ -44,7 +44,7 @@
         <item name="pullRequestMergeUnstableIcon">@drawable/pull_request_merge_unstable_dark</item>
         <item name="pullRequestMergeUnknownIcon">@drawable/pull_request_merge_unknown_dark</item>
         <item name="cardViewTheme">@style/Theme.CardView.Dark</item>
-        <item name="preferenceTheme">@style/PreferenceTheme</item>
+<!--        <item name="preferenceTheme">@style/PreferenceTheme</item>-->
         <item name="colorAccent">@color/dark_accent</item>
         <item name="colorPrimary">@color/dark_primary</item>
         <item name="colorPrimaryDark">@color/dark_primary_dark</item>
@@ -129,7 +129,7 @@
         <item name="pullRequestMergeUnknownIcon">@drawable/pull_request_merge_unknown</item>
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.Light.ListPopupWindow</item>
         <item name="cardViewTheme">@style/Theme.CardView.Light</item>
-        <item name="preferenceTheme">@style/PreferenceTheme</item>
+<!--        <item name="preferenceTheme">@style/PreferenceTheme</item>-->
         <item name="colorAccent">@color/light_accent</item>
         <item name="colorPrimary">@color/light_primary</item>
         <item name="colorPrimaryDark">@color/light_primary_dark</item>
@@ -180,7 +180,7 @@
         <item name="android:colorBackground">#ffffff</item>
     </style>
 
-    <style name="PreferenceTheme" parent="PreferenceThemeOverlay">
+<!--  <style name="PreferenceTheme" parent="PreferenceThemeOverlay">
         <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Subhead</item>
-    </style>
+    </style>-->
 </resources>

@@ -7,10 +7,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.PreferenceFragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatDialog;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceFragmentCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +24,7 @@ import com.gh4a.R;
 import com.gh4a.activities.IssueEditActivity;
 import com.gh4a.widget.IntegerListPreference;
 
-public class SettingsFragment extends PreferenceFragmentCompat implements
+public class SettingsFragment extends PreferenceFragment implements
         Preference.OnPreferenceClickListener, Preference.OnPreferenceChangeListener {
     public interface OnStateChangeListener {
         void onThemeChanged();
@@ -57,10 +57,13 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
     }
 
     @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         getPreferenceManager().setSharedPreferencesName(PREF_NAME);
         addPreferencesFromResource(R.xml.settings);
     }
+
+
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {

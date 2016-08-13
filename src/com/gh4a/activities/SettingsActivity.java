@@ -29,7 +29,7 @@ public class SettingsActivity extends BaseActivity implements
         if (savedInstanceState == null) {
             mResultIntent = new Intent();
 
-            getSupportFragmentManager()
+            getFragmentManager()
                     .beginTransaction()
                     .add(R.id.content_container, new SettingsFragment())
                     .commit();
